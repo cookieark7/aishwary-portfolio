@@ -1,0 +1,49 @@
+import { Rise } from "../Rise";
+import { Room } from "../Room";
+import { RoomLabel } from "../RoomLabel";
+import { WordReveal } from "../WordReveal";
+import { experience } from "@/content/experience";
+
+/**
+ * Room 03 — a hallway of dated plaques. Filled markers are jobs, hollow ones
+ * are study, and the rail down the left is the walk between them.
+ */
+export function Corridor() {
+  return (
+    <Room id="corridor" className="bg-paper-alt border-ink/10 border-t-[1.5px] py-[120px]">
+      <div className="mx-auto max-w-[880px]">
+        <RoomLabel id="corridor" />
+        <h2 className="font-display m-0 mb-3 flex flex-wrap gap-x-[0.24em] text-[clamp(36px,4.4vw,54px)] font-bold">
+          <WordReveal text="The long way here." />
+        </h2>
+        <p className="text-ink/68 m-0 mb-[50px] max-w-[520px] text-[16.5px] leading-[1.6]">
+          Where I&#39;ve worked, what I owned, and where I learned it.
+        </p>
+
+        <ol className="relative m-0 list-none p-0">
+          <span aria-hidden className="bg-ink/18 absolute top-2 bottom-2 left-[6px] w-[1.5px]" />
+          {experience.map((stop, i) => (
+            <Rise key={`${stop.org}-${stop.period}`} index={i} delay={0.1}>
+              <li className="relative pb-11 pl-10 last:pb-0">
+                <span
+                  aria-hidden
+                  className={`border-accent absolute top-[7px] left-0 size-[13px] rounded-full border-[1.5px] ${
+                    stop.kind === "study" ? "bg-paper-alt" : "bg-accent"
+                  }`}
+                />
+                <div className="text-ink/45 mb-1 font-mono text-[11.5px] tracking-[0.08em]">
+                  {stop.period}
+                </div>
+                <div className="font-display text-[27px] leading-tight font-bold">{stop.role}</div>
+                <div className="text-accent mb-2 text-[15px]">{stop.org}</div>
+                <p className="text-ink/70 m-0 max-w-[560px] text-[14.5px] leading-[1.6] text-pretty">
+                  {stop.note}
+                </p>
+              </li>
+            </Rise>
+          ))}
+        </ol>
+      </div>
+    </Room>
+  );
+}
