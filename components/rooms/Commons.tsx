@@ -27,7 +27,7 @@ export function Commons() {
               rel="noopener noreferrer"
               event="contact_clicked"
               eventProps={{ channel: "oss", repo: lead.repo }}
-              className="border-chalk/18 bg-chalk/3 hover:border-accent-lit/70 hover:bg-chalk/7 group block rounded-[5px] border-[1.5px] p-7 text-inherit no-underline transition-[transform,border-color,background] duration-300 ease-[cubic-bezier(0.34,1.4,0.64,1)] hover:-translate-y-1.5 md:p-9"
+              className="border-chalk/18 bg-chalk/3 hover:border-accent-lit/70 hover:bg-chalk/7 group block rounded-[5px] border-[1.5px] p-7 text-inherit no-underline transition-[translate,rotate,scale,border-color,background] duration-300 ease-[cubic-bezier(0.34,1.4,0.64,1)] hover:-translate-y-1.5 md:p-9"
             >
               <div className="mb-5 flex flex-wrap items-center gap-x-3.5 gap-y-2">
                 <span className="text-accent-lit font-mono text-[14px]">{lead.repo}</span>
@@ -71,7 +71,7 @@ export function Commons() {
                   rel="noopener noreferrer"
                   event="contact_clicked"
                   eventProps={{ channel: "oss", repo: c.repo }}
-                  className="border-chalk/18 bg-chalk/3 hover:border-accent-lit/70 hover:bg-chalk/7 block h-full rounded-[5px] border-[1.5px] p-[22px] text-inherit no-underline transition-[transform,border-color,background] duration-300 ease-[cubic-bezier(0.34,1.4,0.64,1)] hover:-translate-y-1.5 hover:rotate-[0.4deg]"
+                  className="border-chalk/18 bg-chalk/3 hover:border-accent-lit/70 hover:bg-chalk/7 block h-full rounded-[5px] border-[1.5px] p-[22px] text-inherit no-underline transition-[translate,rotate,scale,border-color,background] duration-300 ease-[cubic-bezier(0.34,1.4,0.64,1)] hover:-translate-y-1.5 hover:rotate-[0.4deg]"
                 >
                   <div className="mb-3 flex items-center justify-between gap-3">
                     <span className="text-accent-lit font-mono text-[13px]">{c.repo}</span>

@@ -65,3 +65,14 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+@layer components {
+  /* Highlighter stroke for **emphasised** phrases — see components/Emphasis.tsx. */
+  .ink-mark {
+    font-weight: 600;
+    color: var(--color-ink);
+    background-image: linear-gradient(transparent 58%, oklch(52% 0.17 30 / 0.16) 58%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}

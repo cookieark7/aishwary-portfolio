@@ -6,10 +6,10 @@ import { ROOMS } from "@/lib/rooms";
 import { site } from "@/lib/site";
 
 const PRIMARY =
-  "bg-ink text-paper hover:bg-accent rounded-[4px] px-[30px] py-[15px] font-mono text-[14px] no-underline transition-[transform,background,box-shadow] duration-300 ease-[cubic-bezier(0.34,1.5,0.64,1)] hover:-translate-y-1 hover:shadow-[0_14px_26px_oklch(22%_0.02_260_/_0.25)]";
+  "bg-ink text-paper hover:bg-accent rounded-[4px] px-[30px] py-[15px] font-mono text-[14px] no-underline transition-[translate,rotate,scale,background,box-shadow] duration-300 ease-[cubic-bezier(0.34,1.5,0.64,1)] hover:-translate-y-1 hover:shadow-[0_14px_26px_oklch(22%_0.02_260_/_0.25)]";
 
 const OUTLINE =
-  "border-ink/70 hover:border-accent hover:text-accent text-ink rounded-[4px] border-[1.5px] px-[30px] py-[15px] font-mono text-[14px] no-underline transition-[transform,border-color,color] duration-300 ease-[cubic-bezier(0.34,1.5,0.64,1)] hover:-translate-y-1";
+  "border-ink/70 hover:border-accent hover:text-accent text-ink rounded-[4px] border-[1.5px] px-[30px] py-[15px] font-mono text-[14px] no-underline transition-[translate,rotate,scale,border-color,color] duration-300 ease-[cubic-bezier(0.34,1.5,0.64,1)] hover:-translate-y-1";
 
 export function Doorway() {
   // Until the résumé exists, email carries the primary button rather than

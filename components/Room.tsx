@@ -35,11 +35,12 @@ export function Room({
   return (
     <section
       id={id}
+      tabIndex={-1}
       ref={(el) => {
         ref.current = el;
         register(index)(el);
       }}
-      className={`relative overflow-hidden px-[6vw] md:pr-[6vw] md:pl-[68px] ${className}`}
+      className={`relative overflow-hidden px-[6vw] outline-none md:pr-[6vw] md:pl-[68px] ${className}`}
     >
       <motion.div
         aria-hidden

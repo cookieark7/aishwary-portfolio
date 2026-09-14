@@ -16,8 +16,7 @@ export const site = {
   /** Overrides the hero headline. Keep it short; it animates word by word. */
   headline: "Come in. Mind the sketches.",
 
-  /** ← TODO: the address you actually want public. */
-  email: "you@example.com",
+  email: "aishwary.kantode2@gmail.com",
 
   /**
    * Set to a path once the PDF exists (drop it at public/resume.pdf).
@@ -29,10 +28,10 @@ export const site = {
   /** Anything left null is simply not rendered. */
   socials: {
     github: "https://github.com/cookieark7",
-    linkedin: null as string | null, // ← TODO
+    linkedin: "https://www.linkedin.com/in/aishwary-kantode-72159417b/" as string | null,
     x: null as string | null,
   },
 
-  /** Hero portrait. Drop a square image in public/images/ and point here. */
-  portrait: null as string | null,
+  /** Hero portrait: a square crop, served from public/images/. */
+  portrait: "/images/portrait.jpg" as string | null,
 };

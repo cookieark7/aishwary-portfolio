@@ -1,40 +1,19 @@
 /**
  * Room 03 — The Corridor. Roles and education, newest first.
- * `kind` picks the marker: filled for work, hollow for study.
- *
- * ─── PLACEHOLDER ────────────────────────────────────────────────────────────
- * Dates are shaped to match "four years in", but the employers, titles and
- * notes below are invented scaffolding — replace every one of them before this
- * site goes live.
+ * `kind` picks the marker: filled for work, hollow for study. A period ending
+ * in "Present" gets the accent ring.
  */
 export type Stop = {
   period: string;
   role: string;
   org: string;
-  note: string;
+  /** Optional one-liner: what you owned, or something you shipped. */
+  note?: string;
   kind?: "work" | "study";
 };
 
 export const experience: Stop[] = [
-  {
-    period: "2024 — Present",
-    role: "Fullstack Developer",
-    org: "Company Name",
-    note: "What you own, the stack, and one thing you shipped that mattered.",
-    kind: "work",
-  },
-  {
-    period: "2022 — 2024",
-    role: "Software Engineer",
-    org: "Previous Company",
-    note: "Scope, team size, or a shipped highlight.",
-    kind: "work",
-  },
-  {
-    period: "2022",
-    role: "Your degree",
-    org: "University Name",
-    note: "Honours, thesis, or relevant coursework.",
-    kind: "study",
-  },
+  { period: "2024 — Present", role: "Software Engineer", org: "Xpressbees", kind: "work" },
+  { period: "2023 — 2024", role: "Junior Software Engineer", org: "Xpressbees", kind: "work" },
+  { period: "2022 — 2023", role: "Graduate Trainee", org: "Xpressbees", kind: "work" },
 ];
