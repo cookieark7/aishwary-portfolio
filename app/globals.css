@@ -43,6 +43,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Keeps the layout from shifting when the mobile menu locks page scroll. */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -74,5 +76,52 @@ body {
     background-image: linear-gradient(transparent 58%, oklch(52% 0.17 30 / 0.16) 58%);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+  }
+
+  /* Mobile section menu: a bottom sheet on a native <dialog> (components/RoomMenu.tsx).
+     @starting-style and allow-discrete let it slide into and out of the top layer. */
+  .sheet {
+    inset: auto 0 0 0;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 85dvh;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    overflow: visible;
+    translate: 0 100%;
+    transition:
+      translate 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+      overlay 0.34s allow-discrete,
+      display 0.34s allow-discrete;
+  }
+  .sheet[open] {
+    translate: 0 0;
+  }
+  .sheet::backdrop {
+    background-color: oklch(22% 0.02 260 / 0);
+    transition:
+      background-color 0.34s ease,
+      overlay 0.34s allow-discrete,
+      display 0.34s allow-discrete;
+  }
+  .sheet[open]::backdrop {
+    background-color: oklch(22% 0.02 260 / 0.45);
+  }
+  @starting-style {
+    .sheet[open] {
+      translate: 0 100%;
+    }
+    .sheet[open]::backdrop {
+      background-color: oklch(22% 0.02 260 / 0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sheet,
+    .sheet::backdrop {
+      transition: none;
+    }
   }
 }

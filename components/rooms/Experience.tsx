@@ -5,14 +5,14 @@ import { WordReveal } from "../WordReveal";
 import { experience } from "@/content/experience";
 
 /**
- * Room 03 — a hallway of dated plaques. Filled markers are jobs, hollow ones
- * are study, and the one you're in now wears the accent ring.
+ * Room 03 — Experience, as a timeline. Filled markers are jobs, hollow ones are
+ * study, and the current role wears the accent ring.
  */
-export function Corridor() {
+export function Experience() {
   return (
-    <Room id="corridor" className="bg-paper-alt border-ink/10 border-t-[1.5px] py-[120px]">
+    <Room id="experience" className="bg-paper-alt border-ink/10 border-t-[1.5px] py-[120px]">
       <div className="mx-auto max-w-[880px]">
-        <RoomLabel id="corridor" />
+        <RoomLabel id="experience" />
         <h2 className="font-display m-0 mb-3 flex flex-wrap gap-x-[0.24em] text-[clamp(36px,4.4vw,54px)] font-bold">
           <WordReveal text="The long way here." />
         </h2>

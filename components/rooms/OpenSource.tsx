@@ -5,13 +5,13 @@ import { TrackedLink } from "../TrackedLink";
 import { WordReveal } from "../WordReveal";
 import { contributions } from "@/content/contributions";
 
-export function Commons() {
+export function OpenSource() {
   const [lead, ...rest] = contributions;
 
   return (
-    <Room id="commons" className="bg-wall-dark text-chalk py-[120px]">
+    <Room id="open-source" className="bg-wall-dark text-chalk py-[120px]">
       <div className="mx-auto max-w-[1000px]">
-        <RoomLabel id="commons" />
+        <RoomLabel id="open-source" />
         <h2 className="font-display m-0 mb-3 flex flex-wrap gap-x-[0.24em] text-[clamp(36px,4.4vw,54px)] font-bold">
           <WordReveal text="Other people&#8217;s repositories." />
         </h2>

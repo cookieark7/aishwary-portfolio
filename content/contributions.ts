@@ -1,5 +1,5 @@
 /**
- * Room 05 — The Commons.
+ * Room 05 — Open Source.
  *
  * The first entry renders as the featured card; anything after it falls into
  * the grid below. One well-told contribution beats a padded list.

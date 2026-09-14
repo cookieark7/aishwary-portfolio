@@ -1,14 +1,15 @@
 import { Header } from "@/components/Header";
 import { Rail } from "@/components/Rail";
+import { RoomMenu } from "@/components/RoomMenu";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { TourProvider } from "@/components/TourProvider";
-import { Commons } from "@/components/rooms/Commons";
-import { Corridor } from "@/components/rooms/Corridor";
-import { Doorway } from "@/components/rooms/Doorway";
-import { InstrumentWall } from "@/components/rooms/InstrumentWall";
-import { ReadingRoom } from "@/components/rooms/ReadingRoom";
-import { Threshold } from "@/components/rooms/Threshold";
-import { Workshop } from "@/components/rooms/Workshop";
+import { About } from "@/components/rooms/About";
+import { Contact } from "@/components/rooms/Contact";
+import { Experience } from "@/components/rooms/Experience";
+import { OpenSource } from "@/components/rooms/OpenSource";
+import { Projects } from "@/components/rooms/Projects";
+import { Skills } from "@/components/rooms/Skills";
+import { Writing } from "@/components/rooms/Writing";
 
 export default function Home() {
   return (
@@ -16,14 +17,15 @@ export default function Home() {
       <ScrollProgress />
       <Header />
       <Rail />
+      <RoomMenu />
       <main>
-        <Threshold />
-        <Workshop />
-        <InstrumentWall />
-        <Corridor />
-        <ReadingRoom />
-        <Commons />
-        <Doorway />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Writing />
+        <OpenSource />
+        <Contact />
       </main>
     </TourProvider>
   );

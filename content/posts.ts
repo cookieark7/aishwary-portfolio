@@ -1,5 +1,5 @@
 /**
- * Room 04 — The Reading Room. Links out to Medium.
+ * Room 04 — Writing. Links out to Medium.
  * Read times are from word count; adjust if you disagree with them.
  */
 export type Post = {

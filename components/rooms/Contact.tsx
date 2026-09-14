@@ -11,18 +11,18 @@ const PRIMARY =
 const OUTLINE =
   "border-ink/70 hover:border-accent hover:text-accent text-ink rounded-[4px] border-[1.5px] px-[30px] py-[15px] font-mono text-[14px] no-underline transition-[translate,rotate,scale,border-color,color] duration-300 ease-[cubic-bezier(0.34,1.5,0.64,1)] hover:-translate-y-1";
 
-export function Doorway() {
+export function Contact() {
   // Until the résumé exists, email carries the primary button rather than
   // leaving a prominent link that 404s.
   const hasResume = Boolean(site.resumeUrl);
 
   return (
     <Room
-      id="doorway"
+      id="contact"
       className="bg-paper flex min-h-[88vh] items-center justify-center pt-[120px] pb-[90px]"
     >
       <div className="mx-auto max-w-[620px] text-center">
-        <RoomLabel id="doorway" center />
+        <RoomLabel id="contact" center />
         <h2 className="font-display m-0 mt-[18px] mb-[18px] flex flex-wrap justify-center gap-x-[0.24em] text-[clamp(38px,5vw,62px)] font-bold">
           <WordReveal text="Found something you need built?" />
         </h2>

@@ -5,11 +5,11 @@ import { RoomLabel } from "../RoomLabel";
 import { WordReveal } from "../WordReveal";
 import { archiveUrl, posts } from "@/content/posts";
 
-export function ReadingRoom() {
+export function Writing() {
   return (
-    <Room id="reading" className="bg-paper border-ink/10 border-t-[1.5px] py-[120px]">
+    <Room id="writing" className="bg-paper border-ink/10 border-t-[1.5px] py-[120px]">
       <div className="mx-auto max-w-[880px]">
-        <RoomLabel id="reading" />
+        <RoomLabel id="writing" />
         <h2 className="font-display m-0 mb-3 flex flex-wrap gap-x-[0.24em] text-[clamp(36px,4.4vw,54px)] font-bold">
           <WordReveal text="Thinking, out loud, in public." />
         </h2>

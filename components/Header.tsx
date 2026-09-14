@@ -18,7 +18,7 @@ export function Header() {
         {site.name}
       </span>
       <span
-        className={`font-mono text-[11.5px] tracking-[0.14em] uppercase transition-colors duration-500 ${
+        className={`font-mono text-[11.5px] tracking-[0.14em] uppercase transition-colors duration-500 max-md:hidden pointer-coarse:hidden ${
           headerDark ? "text-chalk/85" : "text-ink/55"
         }`}
       >

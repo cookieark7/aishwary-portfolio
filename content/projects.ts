@@ -1,5 +1,5 @@
 /**
- * Room 01 — The Workshop. Every project renders at the same size.
+ * Room 01 — Projects. Every project renders at the same size.
  *
  * Wrap a phrase in **double asterisks** to highlight it. Keep blurbs to about
  * two sentences (~35 words) so the cards stay evenly weighted, and two or three

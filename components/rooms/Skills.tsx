@@ -4,11 +4,11 @@ import { RoomLabel } from "../RoomLabel";
 import { WordReveal } from "../WordReveal";
 import { skillGroups } from "@/content/skills";
 
-export function InstrumentWall() {
+export function Skills() {
   return (
-    <Room id="instruments" className="bg-paper border-ink/10 border-t-[1.5px] py-[120px]">
+    <Room id="skills" className="bg-paper border-ink/10 border-t-[1.5px] py-[120px]">
       <div className="mx-auto max-w-[1080px]">
-        <RoomLabel id="instruments" />
+        <RoomLabel id="skills" />
         <h2 className="font-display m-0 mb-3 flex flex-wrap gap-x-[0.24em] text-[clamp(36px,4.4vw,54px)] font-bold">
           <WordReveal text="Instruments, not buzzwords." />
         </h2>

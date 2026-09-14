@@ -52,6 +52,20 @@ lower than the last. All three collapse to a no-op under
 `prefers-reduced-motion`, which is what the prototype's `motionIntensity: 0`
 switch was standing in for.
 
+**Navigation.** On desktop the rail down the left edge is the menu: hover or
+tab into it and every section's label slides out. On phones and touch screens a
+pill in the bottom corner names the current section and opens a sheet listing
+them all ([`RoomMenu`](components/RoomMenu.tsx), a native `<dialog>`). Both
+call `navigate()` on the tour, which glides to the section with an ease-in-out
+scroll scaled to the distance, pins the indicator to the destination on the
+way, stops the moment the visitor scrolls or taps, updates the URL fragment
+(keeping any `?ref=`), and moves keyboard focus into the section on arrival.
+
+Section names live in [`lib/rooms.ts`](lib/rooms.ts) and are deliberately
+plain — About, Projects, Skills, Experience, Writing, Open Source, Contact —
+because they're what a recruiter reads in the menu, the header and the URL.
+The personality is in each section's headline instead.
+
 Colours are oklch throughout, carried over from the prototype without a trip
 through hex, and registered as Tailwind v4 theme tokens — so `bg-paper-alt`,
 `text-accent-lit` and `border-ink/14` are the real palette, not approximations.
@@ -84,7 +98,7 @@ replacing PostHog later means rewriting that one file.
 actually scrolls into it, the drop-off between rooms is real:
 
 ```
-Threshold 100% → Workshop 64% → Corridor 41% → Doorway 22% → résumé 9%
+About 100% → Projects 64% → Experience 41% → Contact 22% → résumé 9%
 ```
 
 Build that as a funnel in PostHog and you can see where people lose interest.

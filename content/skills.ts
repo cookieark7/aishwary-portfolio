@@ -1,4 +1,4 @@
-/** Room 02 — The Instrument Wall. */
+/** Room 02 — Skills. */
 export type SkillGroup = { title: string; items: string[] };
 
 export const skillGroups: SkillGroup[] = [

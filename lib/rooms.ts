@@ -9,14 +9,16 @@ export type Room = {
   dark?: boolean;
 };
 
+// Names say plainly what each section holds: they're what a recruiter scans in
+// the menu, the header and the URL. The ids double as those URL fragments.
 export const ROOMS: Room[] = [
-  { id: "threshold", name: "Threshold" },
-  { id: "workshop", name: "The Workshop" },
-  { id: "instruments", name: "The Instrument Wall" },
-  { id: "corridor", name: "The Corridor" },
-  { id: "reading", name: "The Reading Room" },
-  { id: "commons", name: "The Commons", dark: true },
-  { id: "doorway", name: "Doorway" },
+  { id: "about", name: "About" },
+  { id: "projects", name: "Projects" },
+  { id: "skills", name: "Skills" },
+  { id: "experience", name: "Experience" },
+  { id: "writing", name: "Writing" },
+  { id: "open-source", name: "Open Source", dark: true },
+  { id: "contact", name: "Contact" },
 ];
 
 export const roomIndex = (id: string) => ROOMS.findIndex((r) => r.id === id);

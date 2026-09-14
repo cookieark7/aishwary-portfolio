@@ -5,7 +5,7 @@ import { roomIndex, roomNumber, ROOMS } from "@/lib/rooms";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-/** The engraved eyebrow: "Room 03 —— The Corridor", rule drawn on entry. */
+/** The engraved eyebrow: "Room 03 —— Experience", rule drawn on entry. */
 export function RoomLabel({
   id,
   center = false,

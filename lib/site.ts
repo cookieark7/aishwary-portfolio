@@ -20,7 +20,7 @@ export const site = {
 
   /**
    * Set to a path once the PDF exists (drop it at public/resume.pdf).
-   * While this is null the Doorway promotes email to the primary action
+   * While this is null the Contact section promotes email to the primary action
    * instead of showing a button that 404s.
    */
   resumeUrl: null as string | null,

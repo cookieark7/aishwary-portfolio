@@ -49,6 +49,7 @@ function Card({ project }: { project: Project }) {
         ))}
       </div>
 
+      {/* Text-sized links, with touch areas stretched to a fingertip by ::after. */}
       {(project.live || project.repo) && (
         <div className="border-ink/12 mt-4 flex flex-wrap items-center gap-x-5 gap-y-1.5 border-t pt-3.5 font-mono text-[11.5px]">
           {project.live && (
@@ -58,7 +59,7 @@ function Card({ project }: { project: Project }) {
               rel="noopener noreferrer"
               event="project_opened"
               eventProps={{ project: project.name, target: "live" }}
-              className="text-accent hover:text-accent-deep no-underline"
+              className="relative after:absolute after:-inset-x-2 after:-inset-y-3.5 after:content-[''] text-accent hover:text-accent-deep no-underline"
             >
               live &#8599;
             </TrackedLink>
@@ -70,7 +71,7 @@ function Card({ project }: { project: Project }) {
               rel="noopener noreferrer"
               event="project_opened"
               eventProps={{ project: project.name, target: "repo" }}
-              className="text-ink/55 hover:text-accent no-underline"
+              className="relative after:absolute after:-inset-x-2 after:-inset-y-3.5 after:content-[''] text-ink/55 hover:text-accent no-underline"
             >
               github &#8599;
             </TrackedLink>
@@ -81,11 +82,11 @@ function Card({ project }: { project: Project }) {
   );
 }
 
-export function Workshop() {
+export function Projects() {
   return (
-    <Room id="workshop" className="bg-paper-alt border-ink/10 border-t-[1.5px] py-[120px]">
+    <Room id="projects" className="bg-paper-alt border-ink/10 border-t-[1.5px] py-[120px]">
       <div className="mx-auto max-w-[1180px]">
-        <RoomLabel id="workshop" />
+        <RoomLabel id="projects" />
         <h2 className="font-display m-0 mb-3 flex flex-wrap gap-x-[0.24em] text-[clamp(36px,4.4vw,54px)] font-bold">
           <WordReveal text="Prototypes that grew up." />
         </h2>

@@ -1,5 +1,5 @@
 /**
- * Room 03 — The Corridor. Roles and education, newest first.
+ * Room 03 — Experience. Roles and education, newest first.
  * `kind` picks the marker: filled for work, hollow for study. A period ending
  * in "Present" gets the accent ring.
  */
