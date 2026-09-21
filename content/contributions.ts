@@ -32,4 +32,13 @@ export const contributions: Contribution[] = [
     stars: "3.3k ★",
     date: "Merged Sep 2026",
   },
+  {
+    repo: "SQLMesh/sqlmesh",
+    status: "Merged",
+    title: "fix(tests): prevent schema collisions between integration test params",
+    diff: "+10 / −2",
+    kind: "tests",
+    href: "https://github.com/SQLMesh/sqlmesh/pull/6072",
+    date: "Merged Sep 2026",
+  },
 ];
