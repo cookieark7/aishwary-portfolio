@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
   },
   // Required by the proxy above: /ingest paths must not be trailing-slash redirected.
   skipTrailingSlashRedirect: true,
+  // The résumé lists a phone number. Anyone can open it from Contact, but search
+  // engines are told not to index the file, so the number stays out of results.
+  async headers() {
+    return [{ source: "/resume.pdf", headers: [{ key: "X-Robots-Tag", value: "noindex" }] }];
+  },
 };
 
 export default nextConfig;

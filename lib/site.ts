@@ -19,11 +19,12 @@ export const site = {
   email: "aishwary.kantode2@gmail.com",
 
   /**
-   * Set to a path once the PDF exists (drop it at public/resume.pdf).
-   * While this is null the Contact section promotes email to the primary action
-   * instead of showing a button that 404s.
+   * Served from public/resume.pdf. The file carries a phone number, so it goes
+   * out with `X-Robots-Tag: noindex` (see next.config.ts) — reachable from the
+   * Contact button, but kept out of search results.
+   * Back to null and the Contact section promotes email instead.
    */
-  resumeUrl: null as string | null,
+  resumeUrl: "/resume.pdf" as string | null,
 
   /** Anything left null is simply not rendered. */
   socials: {
