@@ -17,7 +17,7 @@ export function Experience() {
           <WordReveal text="The long way here." />
         </h2>
         <p className="text-ink/68 m-0 mb-[50px] max-w-[520px] text-[16.5px] leading-[1.6]">
-          Three titles, one company &mdash; trainee to engineer.
+          Three titles at one company, trainee to engineer &mdash; and where it started.
         </p>
 
         <div className="relative">

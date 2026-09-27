@@ -2,10 +2,30 @@
 export type SkillGroup = { title: string; items: string[] };
 
 export const skillGroups: SkillGroup[] = [
-  { title: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind", "Framer Motion"] },
+  {
+    title: "Frontend",
+    items: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "SASS",
+      "Redux Toolkit",
+      "TanStack",
+      "MUI",
+      "Framer Motion",
+    ],
+  },
   {
     title: "Backend",
-    items: ["Node.js", "Express", "Python", "FastAPI", "Pydantic", "PostgreSQL", "Redis"],
+    items: ["Node.js", "Express", "Python", "FastAPI", "Pydantic", "Prisma", "SQL", "PostgreSQL", "Redis"],
   },
-  { title: "Infra & Tools", items: ["Docker", "AWS", "S3", "Git", "CI/CD", "Vitest"] },
+  {
+    title: "Auth & Security",
+    items: ["Keycloak", "OAuth2 / OIDC", "JWT (RS256)", "RBAC", "AES-256-GCM"],
+  },
+  {
+    title: "Infra & Tools",
+    items: ["Docker", "AWS (EC2, S3)", "Redshift", "nginx", "Git", "CI/CD", "Vitest"],
+  },
 ];

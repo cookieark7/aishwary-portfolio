@@ -16,7 +16,9 @@ export function Skills() {
           Hung on nails, within reach. Pick one up.
         </p>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(230px,100%),1fr))] gap-[42px]">
+        {/* 210px, not 230: four groups then fit across the 1080px container
+            instead of stranding the fourth on a row of its own. */}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(210px,100%),1fr))] gap-[42px]">
           {skillGroups.map((group, i) => (
             <Rise key={group.title} index={i} delay={0.12}>
               <div className="font-display mb-1.5 text-[26px] font-bold">{group.title}</div>
