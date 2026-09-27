@@ -1,4 +1,4 @@
-# Aishwary Kante — portfolio
+# Aishwary Kantode — portfolio
 
 A six-room walk-through portfolio, built from the Claude Design prototype in
 [`design/`](design/). Next.js 16 (App Router) · React 19 · TypeScript ·
@@ -106,8 +106,8 @@ Build that as a funnel in PostHog and you can see where people lose interest.
 **Per-application attribution.** Give each application its own link:
 
 ```
-aishwarykante.com/?ref=acme-backend
-aishwarykante.com/?ref=linkedin-dm-oct
+portfolio.arkexperiment.xyz/?ref=acme-backend
+portfolio.arkexperiment.xyz/?ref=linkedin-dm-oct
 ```
 
 `ref` is registered as a super property, so every event in that session carries

@@ -6,8 +6,8 @@ export const site = {
   name: "Aishwary Kantode",
   role: "Fullstack Developer",
 
-  /** ← TODO: your real domain. Used for OG tags and canonical URLs. */
-  url: "https://aishwarykantode.com",
+  /** The live site. Used for OG tags and canonical URLs. */
+  url: "https://portfolio.arkexperiment.xyz",
 
   /** Shown in the hero, under the headline. */
   intro:

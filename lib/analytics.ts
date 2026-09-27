@@ -72,7 +72,7 @@ export async function initAnalytics() {
 
   client = posthog;
 
-  // Per-application attribution: aishwarykante.com/?ref=acme-backend. Registered
+  // Per-application attribution: portfolio.arkexperiment.xyz/?ref=acme-backend. Registered
   // as a super property, so it rides along on every event in the session.
   const ref = new URLSearchParams(window.location.search).get("ref");
   if (ref) posthog.register({ ref });
